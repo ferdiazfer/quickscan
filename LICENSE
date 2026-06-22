@@ -1,0 +1,82 @@
+QuickScan License — Restrictive, Source-Available
+==================================================
+
+DRAFT - PENDING FERNANDO'S REVIEW AND WTAMU / TAMUS IP CLEARANCE; NOT EFFECTIVE
+   UNTIL FINALIZED. Do NOT publish publicly until West Texas A&M University / The
+   Texas A&M University System confirms it asserts no ownership claim on this
+   software. This license text is a DRAFT: it is provisional, has not been
+   reviewed or approved, and the terms below may need revision to reflect the
+   author's final intent and the university's decision. It takes effect only when
+   Fernando Díaz finalizes it after that review.
+
+Copyright © 2026 Fernando Díaz. All rights reserved.
+
+QuickScan is SOURCE-AVAILABLE software — it is NOT open source. The source is
+shared for transparency and individual academic use only. This is NOT an
+MIT, GPL, BSD, Apache, "non-commercial", or any other OSI-approved open-source
+license. All rights are reserved by the author except as expressly granted in
+Section 1 below.
+
+--------------------------------------------------------------------------------
+1. GRANT — FREE FOR INDIVIDUAL ACADEMIC USE
+--------------------------------------------------------------------------------
+   The author grants you a non-exclusive, non-transferable, revocable, royalty-
+   free license to download, run, and modify QuickScan for your OWN INDIVIDUAL
+   ACADEMIC AND EDUCATIONAL purposes — for example, an individual instructor
+   grading their own courses' exams, or a student or researcher using it for
+   their own study. This individual academic use is free of charge.
+
+--------------------------------------------------------------------------------
+2. RESTRICTIONS
+--------------------------------------------------------------------------------
+   Without the prior WRITTEN permission of the author, you may NOT:
+
+   (a) deploy or use QuickScan institutionally — i.e. for a department,
+       school, college, university, company, or any organization-wide or
+       multi-user roll-out;
+   (b) use QuickScan for any commercial purpose, or as part of any paid
+       product, service, or for-fee offering;
+   (c) redistribute, sublicense, sell, rent, host as a service, or publish
+       QuickScan or any derivative or modified version, in whole or in part,
+       to any third party or the public;
+   (d) remove, obscure, or alter the authorship, copyright, or this license
+       notice in the software or its documentation.
+
+--------------------------------------------------------------------------------
+3. INSTITUTIONAL / COMMERCIAL LICENSING
+--------------------------------------------------------------------------------
+   Free for individual academic use. Contact author for institutional
+   licensing.
+
+        Fernando Díaz, PhD — West Texas A&M University
+        Contact: ferdiazfer@gmail.com
+
+--------------------------------------------------------------------------------
+4. NO WARRANTY
+--------------------------------------------------------------------------------
+   QuickScan is provided "AS IS", WITHOUT WARRANTY OF ANY KIND, express or
+   implied, including but not limited to the warranties of merchantability,
+   fitness for a particular purpose, and non-infringement. The author makes no
+   guarantee as to the accuracy of any grading, scoring, or analysis produced
+   by the software; you are responsible for verifying results before relying
+   on them for any academic or administrative decision.
+
+--------------------------------------------------------------------------------
+5. LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+   In no event shall the author be liable for any claim, damages, or other
+   liability, whether in an action of contract, tort, or otherwise, arising
+   from, out of, or in connection with QuickScan or its use or other dealings
+   in the software.
+
+--------------------------------------------------------------------------------
+6. RESERVATION OF RIGHTS
+--------------------------------------------------------------------------------
+   All rights not expressly granted in Section 1 are reserved by the author.
+   No rights are granted by implication, estoppel, or otherwise. This license
+   does not grant any open-source, patent, or trademark rights.
+
+================================================================================
+Author: Fernando Díaz, PhD · West Texas A&M University (Evolutionary Genomics Lab)
+Contact: ferdiazfer@gmail.com
+================================================================================

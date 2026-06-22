@@ -1,0 +1,30 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Agent / dev working dirs — never publish
+.claude/
+
+# Local test & simulation data (large PDFs, adversarial answer keys)
+test-files/
+test_files/
+layer2_exports/
+
+# Build-time vendor copies (libraries are inlined into index.html)
+vendor/
+
+# Local backups / old builds
+Previous versions/
+previous-versions/
+quickscan-v*.html
+
+# Internal working docs & artifacts
+prompts/
+reports/
+build/
+logo/
+quickscan-project-brief.md
+cowork_server.py
+*.map
+__pycache__/
+*.pyc

@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use QuickScan in your work, please cite it as below."
+title: QuickScan
+abstract: >-
+  QuickScan is a single-file, browser-based optical mark recognition (OMR)
+  bubble-sheet grader — a no-server, no-hardware replacement for physical
+  Scantron machines. An instructor prints answer sheets, students fill them in
+  by hand, and the instructor scans them to PDF and uploads them; QuickScan
+  grades every sheet client-side with canvas-based OMR and reports per-student
+  scores and grades, a score histogram, item analysis (per-question percent
+  correct and discrimination index), KR-20 / Cronbach's alpha reliability,
+  z-scores, distractor analysis, grade curving, and a downloadable
+  self-contained HTML report.
+type: software
+authors:
+  - family-names: "Díaz"
+    given-names: "Fernando"
+    affiliation: "West Texas A&M University"
+    email: "ferdiazfer@gmail.com"
+version: "2.139"
+date-released: 2026-06-20
+keywords:
+  - "optical mark recognition"
+  - "OMR"
+  - "bubble sheet"
+  - "Scantron"
+  - "exam grading"
+  - "assessment"
+  - "item analysis"
+  - "psychometrics"
+  - "education"
+# ───────────────────────────────────────────────────────────────────────────
+# TODO at public release (gated on WTAMU / TAMUS IP-office clearance):
+#   doi:             10.5281/zenodo.XXXXXXX     # Zenodo DOI — minted at release
+#   repository-code: "https://github.com/<user>/quickscan"
+#   url:             "https://<user>.github.io/quickscan/"
+#
+# LICENSE NOTE: QuickScan uses a custom RESTRICTIVE SOURCE-AVAILABLE license
+#   (free for individual academic use; all rights reserved; institutional /
+#   commercial use requires contacting the author). It is NOT an SPDX / OSI
+#   open-source license, so the machine-readable SPDX `license:` field is
+#   intentionally omitted (and `license-url` too, since CFF requires an
+#   absolute URL and the repo is not yet published). The authoritative terms
+#   are in the LICENSE file in this repository (and summarized in README.md).
+# ───────────────────────────────────────────────────────────────────────────
