@@ -2,8 +2,6 @@
 
 **Free, browser-based OMR bubble-sheet grader for teachers. No install, no account, works offline. Scan, grade, and export to your gradebook from any device.**
 
-> ⚠️ **PRIVATE — NOT YET PUBLISHED.** Pending Fernando's review and WTAMU / TAMUS IP-office clearance. Do **not** make this repository public until that review completes. The [`LICENSE`](./LICENSE) is a draft pending finalization.
-
 ![QuickScan](docs/screenshot.png)
 
 ---
