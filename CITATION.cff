@@ -30,7 +30,7 @@ keywords:
   - "psychometrics"
   - "education"
 # ───────────────────────────────────────────────────────────────────────────
-# TODO at public release (gated on WTAMU / TAMUS IP-office clearance):
+# TODO at public release (fill in once the repo is published and the Zenodo DOI is minted):
 #   doi:             10.5281/zenodo.XXXXXXX     # Zenodo DOI — minted at release
 #   repository-code: "https://github.com/<user>/quickscan"
 #   url:             "https://<user>.github.io/quickscan/"

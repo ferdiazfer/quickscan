@@ -1,43 +1,76 @@
+<div align="center">
+
+<img src="docs/readme/logo.png" width="96" alt="QuickScan logo">
+
 # QuickScan
 
-**A free app that automatically grades bubble-sheet exams — faster than a Scantron machine, with no machine to buy. Make answer sheets, scan them in, and get instant scores and analysis. Installs like an app, runs on its own, and needs no internet.**
+**Automatically grades bubble-sheet exams. Faster than a Scantron machine, installs like an app, and works with no internet.**
 
-![QuickScan](docs/screenshot.png)
+[Live app](TODO-pages-url) · [Sample exams](samples/) · [License](LICENSE)
+
+<img src="docs/readme/hero.png" width="860" alt="QuickScan results and analytics view">
+
+</div>
 
 ---
 
-## What it does
+## How it works
 
-- **Automatically grades bubble sheets** — no Scantron machine, no special equipment, no accounts. Scan your students' answer sheets and QuickScan grades every one in seconds.
-- **Handles real exams** — from short quizzes to long exams (up to 200 questions), including two-page exams. It straightens crooked scans for you and keeps every class's results separate and correct.
-- **Builds your gradebook for you** — load your class list and export a grade file that drops straight into Canvas.
-- **Shows you more than scores** — a question-by-question breakdown (which questions were too easy or too hard), which wrong answers students tended to pick, exam-quality stats, grade curving, a review screen for flagged sheets, and a full report you can save and share.
-- **Installs like an app and works with no internet** — install it once and it runs on its own, fully offline. Nothing to set up, nothing to log into.
+Scan your students' bubble sheets, QuickScan reads and grades them, and you get scored results with class analytics in seconds.
 
-## How to use it
+<div align="center">
+<img src="docs/quickscan-flow.png" width="720" alt="Scan, grade, results">
+</div>
 
-1. **Open or install QuickScan**, then create a class and an exam and set how many questions it has.
-2. **Set the answer key** — print a key sheet, mark the correct answers, and scan it in (or just type the answers).
-3. **Scan and grade** — students fill in printed answer sheets by hand; scan them to a PDF and upload it. QuickScan grades every sheet and shows you scores, analysis, and any sheets that need a second look. Export the grade file when you're done.
+QuickScan runs entirely in your browser. There is no account, no server, no upload of student data anywhere, and no internet required once it is installed. It grades faster than a Scantron machine and adds class-level analytics a Scantron never gave you.
 
-> **Try it online:** _TODO — link goes here once the live version is published._
+---
 
-### More on the analysis (for those who want the detail)
+## Step by step
 
-QuickScan includes the kinds of measures used in formal test analysis, in plain view: per-question difficulty and discrimination (item analysis), how often each wrong choice was selected (distractor analysis), overall exam reliability (KR-20 / Cronbach's α), grade curving and adjustments, and a downloadable summary report. You don't need any of this to grade an exam — it's there when you want to improve your test.
+**1. Drop in your scanned sheets**
+Scan or photograph the bubble sheets and drop them in. They grade automatically.
 
-## Install as an app
+<img src="docs/readme/step-1-import.png" width="780" alt="Import scanned sheets">
 
-QuickScan installs straight from the web like a regular app and then runs on its own, with no internet connection needed. The first time it sets up, you'll see a quick loading screen while it stores itself for offline use.
+**2. Set the answer key**
+Type the key, or scan a filled key sheet and QuickScan reads it (50 of 50 detected).
 
-## Citation
+<img src="docs/readme/step-2-key.png" width="780" alt="Answer key">
 
-If you use QuickScan in your work, please cite it — see [`CITATION.cff`](./CITATION.cff). _TODO: citation ID to be added._
+**3. Grade**
+Every sheet is scored as it comes in, with the student ID read straight off the page.
+
+<img src="docs/readme/step-3-grade.png" width="780" alt="Grading in progress">
+
+**4. Review results**
+A ranked score table, exportable to CSV or straight to your Canvas gradebook.
+
+<img src="docs/readme/step-4-results.png" width="780" alt="Scored results">
+
+---
+
+## What you get
+
+- Grades a full class of bubble sheets in seconds, from a scan or a phone photo
+- Reads the student ID off each sheet automatically
+- Class analytics: score histogram, grade distribution, and per-question item analysis
+- Test-reliability stats for those who want the detail (KR-20, Cronbach's alpha, item discrimination, distractor analysis)
+- One-click export to a scores CSV or a Canvas-ready CSV
+- Installs like an app and works fully offline, with no account and no data leaving your computer
+
+---
+
+## Install
+
+Open the [live app](TODO-pages-url) and click install when your browser offers it. After that it runs offline like any installed app.
+
+To try it right now with no printer or scanner, grade the ready-made set in [`samples/`](samples/): one answer key plus 20 filled student sheets.
+
+---
 
 ## License
 
-QuickScan is free for individual and academic use. All rights reserved; commercial use by permission. See [`LICENSE`](./LICENSE) for the full terms.
+QuickScan is source-available software, not open source. See [LICENSE](LICENSE) for terms.
 
-## Author
-
-Fernando Díaz, PhD — West Texas A&M University.
+© 2026 Fernando Díaz. QuickScan is independent and unaffiliated; Scantron is a trademark of Scantron Corporation, referenced here only for comparison.
