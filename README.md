@@ -6,7 +6,7 @@
 
 **Automatically grades bubble-sheet exams. Faster than a Scantron machine, installs like an app, and works with no internet.**
 
-[Live app](TODO-pages-url) · [Sample exams](samples/) · [License](LICENSE)
+[Live app](https://ferdiazfer.github.io/quickscan/) · [Sample exams](samples/) · [License](LICENSE)
 
 <img src="docs/readme/hero.png" width="860" alt="QuickScan results and analytics view">
 
@@ -63,7 +63,7 @@ A ranked score table, exportable to CSV or straight to your Canvas gradebook.
 
 ## Install
 
-Open the [live app](TODO-pages-url) and click install when your browser offers it. After that it runs offline like any installed app.
+Open the [live app](https://ferdiazfer.github.io/quickscan/) and click install when your browser offers it. After that it runs offline like any installed app.
 
 To try it right now with no printer or scanner, grade the ready-made set in [`samples/`](samples/): one answer key plus 20 filled student sheets.
 
