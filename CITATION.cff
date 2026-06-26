@@ -18,7 +18,10 @@ authors:
     affiliation: "West Texas A&M University"
     email: "ferdiazfer@gmail.com"
 version: "2.139"
-date-released: 2026-06-20
+date-released: 2026-06-26
+doi: "10.5281/zenodo.20906544"
+repository-code: "https://github.com/ferdiazfer/quickscan"
+url: "https://ferdiazfer.github.io/quickscan/"
 keywords:
   - "optical mark recognition"
   - "OMR"
@@ -30,10 +33,9 @@ keywords:
   - "psychometrics"
   - "education"
 # ───────────────────────────────────────────────────────────────────────────
-# TODO at public release (fill in once the repo is published and the Zenodo DOI is minted):
-#   doi:             10.5281/zenodo.XXXXXXX     # Zenodo DOI — minted at release
-#   repository-code: "https://github.com/<user>/quickscan"
-#   url:             "https://<user>.github.io/quickscan/"
+#   repository-code: "https://github.com/ferdiazfer/quickscan"
+#   url: "https://ferdiazfer.github.io/quickscan/"
+#   doi: "10.5281/zenodo.20906544"
 #
 # LICENSE NOTE: QuickScan uses a custom RESTRICTIVE SOURCE-AVAILABLE license
 #   (free for individual academic use; all rights reserved; institutional /

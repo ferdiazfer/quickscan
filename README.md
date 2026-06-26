@@ -6,6 +6,8 @@
 
 **Automatically grades bubble-sheet exams. Faster than a Scantron machine, installs like an app, and works with no internet.**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20906544.svg)](https://doi.org/10.5281/zenodo.20906544)
+
 [Live app](https://ferdiazfer.github.io/quickscan/) · [Sample exams](samples/) · [License](LICENSE)
 
 <img src="docs/readme/hero.png" width="860" alt="QuickScan results and analytics view">
