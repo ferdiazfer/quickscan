@@ -76,13 +76,14 @@ historical provenance comments and frozen bodies untouched. Re-run the frozen ga
 
 ---
 
-## 4. Obfuscate `index.html` (DEFERRED — needs Node/npm)
+## 4. Obfuscate `index.html` (needs Node/npm)
 
-> **Status (v2.139): NOT executed on this machine.** Node/npm is not installed here (only
-> Python 3.14). The shipped `index.html` is therefore an **un-obfuscated copy** of
-> `quickscan-v2.139.html` — fully functional. Obfuscation deters casual copying of Fernando's
-> code; it is **not** a functional requirement. Run this once Node is available; it is reversible
-> (re-emitted from the readable source each release).
+> **Status (v2.181): EXECUTED (low-overhead profile).** The shipped `index.html` is an **obfuscated** build of
+> the readable versioned source (app `<script>` blocks only; the four inlined vendor libraries
+> and the worker source are left byte-identical). Obfuscation deters casual copying of
+> Fernando's code; it is **not** a functional requirement, and it is fully reversible —
+> `index.html` is re-emitted from the readable source each release. (Builds before v2.180
+> shipped an un-obfuscated copy; obfuscated builds continue from v2.180 on.)
 
 ```
 npm init -y && npm install --save-dev javascript-obfuscator
@@ -91,13 +92,28 @@ node build/obfuscate.js quickscan-v2.NN.html index.html
 `build/obfuscate.js` obfuscates **only Fernando's app `<script>` blocks** and leaves the four
 inlined vendor libraries + the worker source **as-is** (it skips any block whose opening tag has
 `src=`, `type="text/js-worker"`, or whose head carries a `/*! Chart.js | PDF.js | jsPDF` marker).
+The block scanner is comment- and template-aware: a literal `<script …>` inside an HTML comment
+(e.g. the v2.138 "no external `<script src>`" note) or inside an app block's JS template string
+(the Full-Report builder's embedded `<script> … <\/script>`) is never mis-parsed as its own block.
 
-Conservative settings (see the script for the full rationale):
+Settings — conservative for correctness, tuned LOW-OVERHEAD for speed (see the script for the full rationale):
 - `renameGlobals: false` — **critical** (inline `onclick=` handlers + cross-`<script>` globals would break otherwise).
 - `controlFlowFlattening: false`, `deadCodeInjection: false` — the riskiest/heaviest transforms; off so the harness-untestable grade path can't silently break.
 - `transformObjectKeys: false` — the app uses object keys as data (roster maps, settings).
 - `selfDefending: false`, `debugProtection: false`.
-- `stringArray: true` (base64, threshold 0.75), local identifier renaming (hexadecimal), `compact`.
+- `stringArray: true` with **`stringArrayEncoding: ['none']`, `stringArrayCallsTransform: false`, `stringArrayRotate/Shuffle: false`** (the v2.181 low-overhead profile — see the perf note), threshold 0.75; local identifier renaming (hexadecimal); `compact`.
+
+**v2.181 performance tuning (why the string-array profile changed).** v2.180 graded *correctly* but
+~6× too slow: the default `stringArrayCallsTransform` + base64 per-access decode + the rotate IIFE
+added runtime cost to the string-touching grade/read code (measured `scoreSheet` **25.3 → 4.5 µs/call**
+after tuning, matching the readable build's ~4.2 µs; the pure-numeric `sampleCircle` pixel loop was
+never affected). The frozen grade logic is byte-unchanged — only the obfuscator's overhead moved.
+Because an **un-encoded** string array re-emits `</script>` literally, the obfuscator step now
+**neutralizes `</script` → `<\/script`** in each obfuscated block body (value-preserving) so the
+Full-Report builder's embedded `<script> … <\/script>` template can't truncate the block (else
+`buildFullReportHTML`/`exportFullReport` would go undefined). base64 encoding is also safe (it hid
+these for free) if deterrence ever matters more than the last bit of speed — but the un-encoded
+profile grades at native speed.
 
 **Verify the obfuscated artifact (a build that breaks grading is a failed build):** load it offline,
 confirm zero console errors + all globals present, exercise jsPDF + Chart.js offline, run the pure

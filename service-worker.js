@@ -13,7 +13,7 @@
 // NOTE: relative URLs below resolve against this worker's location, so on GitHub Pages at /quickscan/
 // they correctly target /quickscan/index.html, /quickscan/PWA/manifest.json, etc. - no hardcoded subpath.
 
-const CACHE = 'quickscan-shell-v2.139';
+const CACHE = 'quickscan-shell-v2.182';
 const ASSETS = [
   './',
   './index.html',
