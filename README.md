@@ -30,15 +30,15 @@ QuickScan runs entirely in your browser. There is no account, no server, no uplo
 
 ## Step by step
 
-**1. Drop in your scanned sheets**
-Scan or photograph the bubble sheets and drop them in. They grade automatically.
-
-<img src="docs/readme/step-1-import.png" width="780" alt="Import scanned sheets">
-
-**2. Set the answer key**
+**1. Set the answer key**
 Type the key, or scan a filled key sheet and QuickScan reads it (50 of 50 detected).
 
-<img src="docs/readme/step-2-key.png" width="780" alt="Answer key">
+<img src="docs/readme/step-1-key.png" width="780" alt="Answer key">
+
+**2. Drop in your scanned sheets**
+Scan or photograph the bubble sheets and drop them in. They grade automatically.
+
+<img src="docs/readme/step-2-import.png" width="780" alt="Import scanned sheets">
 
 **3. Grade**
 Every sheet is scored as it comes in, with the student ID read straight off the page.
