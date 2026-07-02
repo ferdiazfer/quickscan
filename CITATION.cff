@@ -17,8 +17,8 @@ authors:
     given-names: "Fernando"
     affiliation: "West Texas A&M University"
     email: "ferdiazfer@gmail.com"
-version: "2.139"
-date-released: 2026-06-26
+version: "2.208"
+date-released: 2026-07-02
 doi: "10.5281/zenodo.20906544"
 repository-code: "https://github.com/ferdiazfer/quickscan"
 url: "https://ferdiazfer.github.io/quickscan/"
