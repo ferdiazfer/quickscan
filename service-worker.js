@@ -13,7 +13,7 @@
 // NOTE: relative URLs below resolve against this worker's location, so on GitHub Pages at /quickscan/
 // they correctly target /quickscan/index.html, /quickscan/PWA/manifest.json, etc. - no hardcoded subpath.
 
-const CACHE = 'quickscan-shell-v2.208';
+const CACHE = 'quickscan-shell-v2.218';
 const ASSETS = [
   './',
   './index.html',
@@ -21,6 +21,7 @@ const ASSETS = [
   './PWA/icon-192.png',
   './PWA/icon-512.png',
   './PWA/apple-touch-icon.png',
+  './PWA/icon-512-maskable.png',
 ];
 
 async function precache() {
